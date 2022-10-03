@@ -1,1 +1,4 @@
-<p>order-dashboard works!</p>
+<!-- <p>order-dashboard works!</p> -->
+<button type="button" class="btn" (click)="workdayStarts()">Start Workday!</button>
+<button type="button" class="btn" (click)="workdayEnds()">Ends Workday!</button>
+<p *ngFor="let order of allOrders">{{ order }}</p>

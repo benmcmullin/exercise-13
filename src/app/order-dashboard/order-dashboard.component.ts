@@ -7,12 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderDashboardComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
-  workdayStarts () {
+ isStarted: boolean=true;
+ ngOnInit(): void {
+}
+allOrders = [];
+workdayStarts () {
 
-  }
+  setInterval(() => {
+    this.allOrders.push('New Order:')
+
+  }, 2000)
+}
+workdayEnds () {
+
+}
 }
